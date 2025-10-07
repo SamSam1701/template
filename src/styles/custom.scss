@@ -1,0 +1,26 @@
+.ant-menu-light .ant-menu-item {
+  border-radius: 999px 0 0 999px !important;
+  margin-inline: 10px !important;
+}
+
+.ant-menu-light .ant-menu-item:hover {
+  background-color: #e0e7ff !important;
+}
+
+.ant-menu-light .ant-menu-item-selected {
+  pointer-events: none !important;
+  overflow: visible;
+  position: relative;
+}
+
+.ant-menu-light .ant-menu-item-selected::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background-color: #4f46e5;
+  border-radius: 4px;
+}
